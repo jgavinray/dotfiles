@@ -7,8 +7,7 @@ call vundle#begin()
 
 " All plugins start getting put in here
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle'
+" Vundle stuff
 Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
