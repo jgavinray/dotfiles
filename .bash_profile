@@ -9,6 +9,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias k='kubectl'
+alias mtr='mtr -t'
+
 
 # Prompt
 source "${HOME}"/.kube-ps1.sh
