@@ -25,6 +25,10 @@ source "${HOME}"/.ktx
 source "${HOME}"/.ktx-completion.sh
 alias debugpod='kubectl run -i --tty --rm debug --image=nicolaka/netshoot --restart=Never -- /bin/bash'
 alias kgetall='kubectl get $(kubectl api-resources --verbs=list -o name | paste -sd, -) --ignore-not-found --show-kind -o wide $NS'
+function set-kubeconfig {
+	export KUBECONFIG=~/.kube/${1:-kubeconfig}
+}
+
 function decode_kubernetes_secret {
   kubectl get secret $@ -o json | jq '.data | map_values(@base64d)'
 }
