@@ -38,3 +38,5 @@ alias ds="decode_kubernetes_secret"
 
 
 # Paths
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
