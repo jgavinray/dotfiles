@@ -38,5 +38,6 @@ alias ds="decode_kubernetes_secret"
 
 
 # Paths
+export PATH=$PATH:/usr/local/go/bin
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
